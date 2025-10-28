@@ -1,0 +1,125 @@
+:root {
+            --primary-color: #4f46e5;
+            --secondary-color: #7c3aed;
+            --success-color: #10b981;
+            --danger-color: #ef4444;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px 0;
+        }
+
+        .main-container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin: 20px auto;
+            max-width: 1400px;
+        }
+
+        .navbar-custom {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            border-radius: 10px;
+            padding: 15px 25px;
+            margin-bottom: 30px;
+        }
+
+        .navbar-custom .navbar-brand {
+            color: white !important;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .navbar-custom .nav-link {
+            color: rgba(255, 255, 255, 0.9) !important;
+            transition: all 0.3s;
+        }
+
+        .navbar-custom .nav-link:hover {
+            color: white !important;
+            transform: translateY(-2px);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            border: none;
+            transition: all 0.3s;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
+        }
+
+        .alert {
+            border-radius: 10px;
+            border: none;
+        }
+
+        .module-card, .content-card {
+            border: 2px solid #e5e7eb;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: all 0.3s;
+        }
+
+        .module-card:hover, .content-card:hover {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .module-header {
+            background: linear-gradient(135deg, #000 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .content-header {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+
+        .remove-btn {
+            background: var(--danger-color);
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .remove-btn:hover {
+            background: #dc2626;
+            transform: scale(1.05);
+        }
+
+        .add-btn {
+            background: var(--success-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .add-btn:hover {
+            background: #059669;
+            transform: scale(1.05);
+        }
+
+        .nested-content {
+            margin-left: 20px;
+            padding-left: 20px;
+            border-left: 3px solid var(--primary-color);
+        }
